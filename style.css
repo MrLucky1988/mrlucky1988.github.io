@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#svg-heart {
+    display: none;
+}
+
+#canvas-heart {
+    display: block;
+    max-width: 90vw;
+    height: 60vh;
+    object-fit: contain;
+}
+
+#canvas-lovely {
+    margin-top: 1vh;
+    height: 80vh;
+    max-width: 90vw;
+    object-fit: contain;
+}
+
+#page-sexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.svg-text {
+    user-select: none;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@-webkit-keyframes svg-text-anim {
+    40% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    60% {
+        stroke-dashoffset: 0;
+        fill: #ff000044;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #ff000044;
+    }
+}
+
+@keyframes svg-text-anim {
+    40% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    60% {
+        stroke-dashoffset: 0;
+        fill: #ff000044;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #ff000044;
+    }
+}

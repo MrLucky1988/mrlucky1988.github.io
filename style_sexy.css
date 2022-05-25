@@ -1,0 +1,76 @@
+#svg-sexy,
+#svg-sexy2 {
+  opacity: 0%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#svg-sexy path, #svg-sexy2 path {
+  stroke: rgba(255, 0, 0, 0.625) !important;
+  stroke-width: 0.3px !important;
+  stroke-opacity: 0%;
+}
+
+#svg-sexy path {
+  stroke-miterlimit: 10;
+  stroke-dasharray: 6;
+  stroke-linejoin: round !important;
+  /* animation: draw 7s infinite linear; */
+  stroke-dashoffset: 50;
+}
+
+#svg-sexy2 path {
+  stroke-miterlimit: 10;
+  stroke-dasharray: 6;
+  stroke-linejoin: round !important;
+  /* animation: */
+}
+
+#svg-sexy3 path {
+  stroke: rgba(0, 0, 0, 1) !important;
+}
+
+@keyframes begin {
+  from {
+    stroke-opacity: 0%;
+  }
+
+  to {
+    stroke-opacity: 75%;
+  }
+}
+
+@keyframes stop {
+  from {
+    stroke-opacity: 75%;
+  }
+
+  to {
+    stroke-opacity: 0%;
+  }
+}
+
+@keyframes opa {
+  from {
+    stroke-opacity: 30%;
+  }
+
+  to {
+    stroke-opacity: 40%;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show {
+  to {
+    fill-opacity: 1;
+    opacity: 1;
+    stroke-opacity: 1;
+  }
+}

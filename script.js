@@ -1,3 +1,5 @@
+let audio;
+
 document.addEventListener('DOMContentLoaded', (function () {
     wakeLock();
     document.getElementById('tfPassword').addEventListener('keypress', e => {
@@ -8,7 +10,12 @@ document.addEventListener('DOMContentLoaded', (function () {
     document.getElementById('container').style.display = 'flex';
     document.body.style.background = 'url("bg.png")';
     document.body.style.backgroundColor = 'black';
+    loadAudio();
 }), false);
+
+async function loadAudio() {
+    audio = new Audio('think.mp3');
+}
 
 function wakeLock() {
     // Create the root video element
@@ -62,7 +69,7 @@ function onSubmit() {
         document.body.style.cursor = 'none';
         document.body.style.background = 'black';
         document.getElementById('container').style.animation = 'fadeOut 8s forwards';
-        let audio = new Audio('think.mp3');
+
         audio.volume = 0.6;
         audio.play();
         setTimeout(() => {

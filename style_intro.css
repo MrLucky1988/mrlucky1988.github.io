@@ -71,6 +71,7 @@
     border-radius: 14px;
     outline: rgba(255, 0, 0, 0.549) solid 2px;
     font-family: Ubuntu;
+    min-width: 20%;
 }
 
 #lbPassword {

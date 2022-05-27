@@ -1,14 +1,25 @@
 #svg-sexy,
+#svg-sexy2,
+#svg-sexy3 {
+  height: 90%;
+  position: absolute;
+}
+
+#svg-sexy,
 #svg-sexy2 {
   opacity: 0%;
-  height: 100%;
-  position: absolute;
   z-index: -1;
 }
 
-#svg-sexy path, #svg-sexy2 path {
-  stroke: rgba(255, 0, 0, 0.625) !important;
-  stroke-width: 0.3px !important;
+#svg-sexy3 {
+  opacity: 70%;
+  z-index: 1 !important;
+}
+
+#svg-sexy path,
+#svg-sexy2 path {
+  stroke: rgba(255, 0, 0, 0.725) !important;
+  stroke-width: 0.4px !important;
   stroke-opacity: 0%;
 }
 
@@ -29,6 +40,7 @@
 
 #svg-sexy3 path {
   stroke: rgba(0, 0, 0, 1) !important;
+  stroke-width: 0.4px !important;
 }
 
 @keyframes begin {

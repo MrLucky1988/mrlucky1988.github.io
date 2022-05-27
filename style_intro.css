@@ -1,0 +1,101 @@
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0%;
+    }
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    background: url("bg.png");
+    background-color: black;
+    backdrop-filter: blur(20px);
+}
+
+#tfPassword {
+    background-color: rgba(255, 0, 0, 0.102);
+    color: rgb(255, 62, 62);
+    border: none;
+    padding: 1ex;
+    font-size: 2ex;
+    text-align: center;
+    border-radius: 14px;
+    outline: rgba(255, 0, 0, 0.549) solid 2px;
+    font-family: Ubuntu;
+}
+
+#lbPassword {
+    color: red;
+    font-family: Ubuntu;
+    font-size: 50px;
+    user-select: none;
+    text-shadow: 0 0 2px orange, 0 0 2px orange, 0 0 2px orange, 0 0 2px orange;
+    text-align: center;
+}
+
+#btnSubmit {
+    border: 6px solid rgba(255, 0, 0, 0.149);
+    font-size: 3ex;
+    font-family: Ubuntu;
+    padding: 1ex;
+    border-radius: 10px;
+    background-color: #26181ea8;
+    color: #ff0000;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#btnSubmit:hover {
+    transition: all 500ms;
+    border-color: red;
+    animation: borderChange 1s linear;
+}

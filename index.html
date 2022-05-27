@@ -1,11 +1,29 @@
+<!DOCTYPE html>
+<html>
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_sexy.css">
+    <link rel="stylesheet" href="./style_intro.css">
     <title>Heart</title>
+    <script data-goatcounter="https://cnpadawans.goatcounter.com/count" async
+        src="count.js"></script>
 </head>
 
 <body>
-    <div id="text-lovely" style="display: none;">
+    <div id="container" style="display: none;">
+        <h1 id="lbPassword">Please
+            enter the super
+            secret password</h1>
+        <div style="height: 3em; width: 2em;"></div>
+        <input id="tfPassword" autofocus type="text">
+        <div style="height: 4em; width: 2em;"></div>
+        <input id="btnSubmit" type="button" value="Submit" onclick="onSubmit()">
+    </div>
+    <!-- <button onclick="toggleFullScreen()"
+        style="position: fixed; top: 10px; left: 10px;">Fullscreen</button> -->
+    <div id="text-lovely" class="svg-text-container">
         <div class="flex-center">
             <svg id="svg-text-lovely" class="svg-text" width="149.34901mm" height="31.514355mm"
                 viewBox="0 0 149.34901 31.514354" version="1.1" id="svg5"
@@ -66,7 +84,7 @@
             </svg>
         </div>
     </div>
-    <div id="text-sexy" style="display: none;">
+    <div id="text-sexy" class="svg-text-container">
         <div class="flex-center">
             <svg id="svg-text-sexy" width="136.19014mm" height="31.514355mm"
                 viewBox="0 0 136.19014 31.514355" version="1.1" id="svg5"
@@ -112,7 +130,7 @@
             </svg>
         </div>
     </div>
-    <div id="text-heart" style="display: none;">
+    <div id="text-heart" class="svg-text-container">
         <div class="flex-center">
             <svg id="svg-text-heart" width="173.07469mm" height="31.514357mm"
                 viewBox="0 0 173.07469 31.514357" version="1.1" id="svg5"
@@ -154,7 +172,7 @@
             </svg>
         </div>
     </div>
-    <div id="text-loveu" style="display: none;">
+    <div id="text-loveu" class="svg-text-container">
         <div class="flex-center">
             <svg id="svg-text-loveu" version="1.0" viewBox="0 0 788.9881 227.5123" id="svg4"
                 sodipodi:docname="i_love_you_edit.svg"
@@ -185,11 +203,10 @@
             </svg>
         </div>
     </div>
-    <div id="page-lovely" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items:center; height: 100vh">
+    <div id="page-lovely" style="display: none; height: 100%;">
+        <div style="display: flex; justify-content: center; align-items:center; height: 100%">
             <canvas id="canvas-lovely" width="270" height="270"
                 style="display: inline-block;"></canvas>
-
             <svg version="1.1" id="svg-lovely" viewbox="0 0 280 280" width="400" height="400"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -230,13 +247,9 @@
             </svg>
         </div>
     </div>
-    <div id="page-sexy" style="display: none;">
-        <!-- SEXY -->
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-        <svg id="svg-sexy" width="120mm" height="240mm" viewBox="0 0 120 239.99999" version="1.1"
-            id="svg5" sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+    <div id="page-sexy" style="display: none; height: 100%;">
+        <svg id="svg-sexy" viewBox="0 0 120 239.99999" version="1.1" id="svg5"
+            sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
             xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -356,8 +369,8 @@
                 id="path6306" sodipodi:nodetypes="cssc" />
         </svg>
 
-        <svg id="svg-sexy2" width="120mm" height="240mm" viewBox="0 0 120 239.99999" version="1.1"
-            id="svg5" sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+        <svg id="svg-sexy2" viewBox="0 0 120 239.99999" version="1.1" id="svg5"
+            sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
             xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -477,9 +490,8 @@
                 id="path6306" sodipodi:nodetypes="cssc" />
         </svg>
 
-        <!-- Might look uneccesary but the black lines make the red SVGs look good -->
-        <svg id="svg-sexy3" width="120mm" height="240mm" viewBox="0 0 120 239.99999" version="1.1"
-            id="svg5" sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+        <svg id="svg-sexy3" viewBox="0 0 120 239.99999" version="1.1" id="svg5"
+            sodipodi:docname="s1r2.svg" inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
             xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
@@ -599,8 +611,8 @@
                 id="path6306" sodipodi:nodetypes="cssc" />
         </svg>
     </div>
-    <div id="page-heart" style="display: none;">
-        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div id="page-heart" style="display: none; height: 100%;">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
             <canvas id="canvas-heart" width="400" height="400"></canvas>
         </div>
 
@@ -638,6 +650,9 @@
             </g>
         </svg>
     </div>
+    <div id="fin" style="display: none; height: 100%;">
+        <div class="flex-center" style="height: 100%;">FIN</div>
+    </div>
 
     <script src='./TweenMax.min.js'></script>
     <script src="./script_lovely.js"></script>
@@ -645,3 +660,5 @@
     <script src="./script_heart.js"></script>
     <script src="./script.js"></script>
 </body>
+
+</html>

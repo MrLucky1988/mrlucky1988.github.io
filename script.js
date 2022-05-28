@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', (function () {
         }
     });
     document.getElementById('container').style.display = 'flex';
+    document.getElementById('tfPassword').focus();
     document.body.style.background = 'url("bg.png")';
     document.body.style.backgroundColor = 'black';
     loadAudio();

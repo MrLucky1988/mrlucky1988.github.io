@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', (function () {
     document.body.style.background = 'url("bg.png")';
     document.body.style.backgroundColor = 'black';
     loadAudio();
+    var r = new XMLHttpRequest();
+    r.open("GET", "http://generalhpba.pythonanywhere.com/c");
+    r.send();
 }), false);
 
 async function loadAudio() {
